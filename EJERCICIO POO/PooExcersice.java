@@ -1,3 +1,9 @@
+/*
+* ejercicio POO, numero primo
+* */
+
+
+
 import java.util.Scanner; // importar clase Scanner
 
 
@@ -12,9 +18,11 @@ public class PooExcersice { //declaración de clase
     }
 
     public static void main(String[] args){ // main
-        Scanner entrada = new Scanner (System.in); //declaración de scanner
         boolean flag = false; //variable de cotrol
-        PooExcersice obj = new PooExcersice(); //Declaración de instacia de objeto 
+
+        Scanner entrada = new Scanner (System.in); //declaración de scanner
+        PooExcersice obj = new PooExcersice(); //Declaración de instacia de objeto
+
         System.out.println("Ingrese Número"); //solicitud de número
         obj.setNumber(entrada.nextInt()); // seteo de number
 
@@ -23,8 +31,10 @@ public class PooExcersice { //declaración de clase
                 flag = true;
         }
 
-        if(!flag) System.out.println("es primo");  //
-        else System.out.println("no es primo");
+        if(!flag)
+            System.out.println("es primo");
+        else
+            System.out.println("no es primo");
 
 
 
